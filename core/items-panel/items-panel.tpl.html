@@ -1,0 +1,15 @@
+<div class="flex-container">
+    <div class="wrapper-items">
+        <div class="items-panel">
+            <div class="items-logo">Items</div>
+            <form class="space-between item-add" ng-submit="$ctrl.addItem()">
+                <input class="items-input" type="text" ng-model="$ctrl.tempItem.itemName"
+                       placeholder="Type name here..."/>
+                <button class="items-button" type="submit">Add New</button>
+            </form>
+            <item ng-repeat="item in $ctrl.items track by $index" item="item"
+                  on-delete="$ctrl.coreService.deleteItem(item)"></item>
+        </div>
+    </div>
+    <ui-view class="wrapper"></ui-view>
+</div>

@@ -1,0 +1,10 @@
+<div class="space-between item" ng-class="{active: $ctrl.isActive()}" ui-sref="menuItem.data({id: $ctrl.itemId})">
+    <div class="item-container">
+        <div class="item-name">{{$ctrl.item.itemName}}</div>
+        <div class="item-counter">
+            <div>{{$ctrl.item.commentCount}}</div>
+        </div>
+    </div>
+    <button class="item-delete-button" ng-click="$ctrl.deleteItem(item); $event.stopPropagation();">Delete</button>
+</div>
+<hr class="item-line">

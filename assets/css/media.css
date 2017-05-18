@@ -1,0 +1,35 @@
+@media screen and (max-width: 622px) {
+    comments-panel {
+        display: none;
+    }
+
+    .wrapper-items {
+        width: 250%;
+    }
+
+    .items-panel {
+        width: 130%;
+    }
+
+    .item-delete-button {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .wrapper-items {
+        margin-left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .comment-text {
+        margin-left: 10px;
+    }
+}

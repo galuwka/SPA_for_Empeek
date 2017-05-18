@@ -1,0 +1,272 @@
+body {
+  font-family: 'OpenSans-Light', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.wrapper-items {
+  min-height: 70vh;
+  width: 100%;
+}
+
+/* <core> component assets*/
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: #F9F9F9;
+}
+
+/* <navbar> */
+
+.nav-bar {
+  width: 300px;
+  min-width: 130px;
+  min-height: 100vh;
+  margin-right: 3%;
+  background-color: #18263c;
+}
+
+.nav-logo {
+  padding: 25px 0 70px 12%;
+  font-size: 36px;
+  color: #565A69;
+  cursor: pointer;
+}
+
+/* <nav-item> */
+.nav-item {
+  padding: 15px 0 15px 12%;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #FFFFFF;
+  opacity: 0.8;
+  cursor: pointer;
+  overflow-wrap: break-word;
+}
+
+.nav-item:hover, .nav-item.active {
+  background-color: #FF3158;
+}
+
+/* <items-panel> */
+.items-panel {
+  width: 95%;
+  min-height: 70vh;
+  margin: 33px 20px 0 0;
+  padding-bottom: 20px;
+  box-shadow: 0px 0px 2px 2px #b7b7b7;
+  background-color: #FFFFFF;
+}
+
+.items-logo {
+  margin: 20px 0 20px 0;
+  padding: 20px 25px;
+  font-size: 2rem;
+  color: #666d8a;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-add {
+  padding: 0 4% 0 6%;
+  margin-bottom: 20px;
+}
+
+.items-input {
+  height: 34px;
+  width: 65%;
+  padding-left: 5px;
+  border-radius: 4px;
+  border: 1px solid #C8C8C8;;
+  font-size: 1rem;
+  background-color: #FFFFFF;
+}
+
+input::placeholder {
+  color: #C8C8C8;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.items-button {
+  width: 30%;
+  height: 38px;
+  background-color: #3FC3C3;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 0 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+/* <item> */
+.item {
+  height: inherit;
+  margin-left: 7%;
+  margin-right: 4%;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.item.active {
+  margin-left: -3px;
+  padding-left: 7%;
+  border-left: 4px solid #FF3158;
+}
+
+.item-container {
+  width: 80%;
+  display: inherit;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #373b4e;
+}
+
+.item-name {
+  margin-right: 10px;
+}
+
+.item-counter {
+  display: flex;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 5px 9px;
+  background-color: #3FC3C3;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #FFF;
+}
+
+.item-delete-button {
+  width: 20%;
+  height: 38px;
+  font-weight: 100;
+  background-color: white;
+  color: #f01d3a;
+  border-radius: 4px;
+  border: 1px solid #f01d3a;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.item-line {
+  opacity: 0.2;
+  width: 88%;
+  margin: 0 4% 0 7%;
+}
+
+/* <comments-panel> */
+.comments-panel {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-self: flex-start;
+  min-height: 60vh;
+  width: 88%;
+  margin-top: 33px;
+  padding: 0 10px 0 24px;
+  box-shadow: 0 0 2px 2px #b7b7b7;
+  background-color: #FFFFFF;
+}
+
+.comments-logo {
+  margin: 20px 0 20px 0;
+  font-size: 2rem;
+  color: #666d8a;
+}
+
+textarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  vertical-align: bottom;
+  width: -webkit-calc(100% - 76px);
+  width: calc(100% - 76px);
+  margin-left: 20px;
+  height: 100px;
+  /*display: inline-block;*/
+  /*float: right;*/
+  resize: none;
+}
+
+.comments-pic {
+  width: 60px;
+  height: 60px;
+  background-color: #E6E6E6;
+}
+
+.comments-input {
+  border-radius: 3px;
+  border: 1px solid #bfbfbf;;
+  font-size: 14px;
+}
+
+/* <comment> */
+.comment-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.comment-pic {
+  width: 60px;
+  height: 60px;
+  margin-top: 1em;
+  background-color: #FF8A00;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li:nth-child(2n) .comment-pic {
+  background-color: #47568D;
+}
+
+.comment-text {
+  width: 80%;
+  margin-right: 10px;
+  font-size: 0.8rem;
+  color: #373b4e;
+  overflow-wrap: break-word;
+}
+
+.comment-line {
+  opacity: 0.2;
+  margin-right: 10px;
+}
+
+
+
+
+
+
